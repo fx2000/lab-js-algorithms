@@ -48,7 +48,7 @@ function lexiOrder(hacker1, hacker2) {
 
 // Check Palindrome
 function palindrome(string) {
-  if (string.split("").toString().replace(/\W/g, '') === string.split("").reverse().toString().replace(/\W/g, '')) {
+  if (string.split("").toString().toLowerCase().replace(/\W/g, '') === string.split("").reverse().toString().toLowerCase().replace(/\W/g, '')) {
     console.log("its a palindrome")
   } else {
     console.log("it is not a palindrome")
@@ -60,9 +60,15 @@ function countLoremIpsum(lorem) {
   console.log(lorem.split(/\s+/).length);
 }
 
+// Count words
+function countEt(string) {
+  console.log(string.match(/\bet/g).length);
+}
+
 //isLonger(hacker1, hacker2);
 //nameCaps(hacker1);
 //reverse(hacker2);
 //lexiOrder(hacker1, hacker2);
 //palindrome(prompt("Introduce una frase para verificar si es un Palindrome"));
 //countLoremIpsum(prompt("Escribe un párrafo"));
+//countEt(prompt());
