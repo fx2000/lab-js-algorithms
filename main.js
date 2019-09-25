@@ -26,7 +26,7 @@ function isLonger(hacker1, hacker2) {
 
 // Convertir a mayúsculas
 function nameCaps(name) {
-  console.log(name.toUpperCase());
+  console.log(name.split("").join(" ").toUpperCase());
 }
 
 
@@ -49,9 +49,9 @@ function lexiOrder(hacker1, hacker2) {
 // Check Palindrome
 function palindrome(string) {
   if (string.split("").toString().toLowerCase().replace(/\W/g, '') === string.split("").reverse().toString().toLowerCase().replace(/\W/g, '')) {
-    console.log("its a palindrome")
+    console.log("It's a palindrome")
   } else {
-    console.log("it is not a palindrome")
+    console.log("It's is not a palindrome")
   }
 }
 
