@@ -48,7 +48,7 @@ function lexiOrder(hacker1, hacker2) {
 
 // Check Palindrome
 function palindrome(string) {
-  if (string.split("").toString().toLowerCase().replace(/\W/g, '') === string.split("").reverse().toString().toLowerCase().replace(/\W/g, '')) {
+  if (string.toLowerCase().replace(/\W/g, '') === string.split("").reverse().toString().toLowerCase().replace(/\W/g, '')) {
     console.log("It's a palindrome")
   } else {
     console.log("It's is not a palindrome")
